@@ -1,0 +1,16 @@
+if SHIELD_PHENDRANA_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Phendrana"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_PHENDRANA_LEFT || SHIELD_PHENDRANA_RIGHT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif

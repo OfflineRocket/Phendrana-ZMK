@@ -1,0 +1,13 @@
+file_format: "1"
+id: phendrana
+name: Phendrana
+type: shield
+requires: [makerdiary_nrf52840_m3]
+features:
+  - keys
+  - backlight
+  - display
+  - joystick
+siblings:
+  - phendrana_left
+  - phendrana_right

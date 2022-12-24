@@ -1,0 +1,39 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,battery = &vbatt;
+        zmk,backlight = &backlight;
+    };
+
+    backlight: pwmleds {
+		compatible = "pwm-leds";
+		led_mosfet {
+			pwms = <&pwm0 25>;
+			label = "Backlight LED 0";
+		};
+	};
+
+    vbatt: vbatt {
+        compatible = "zmk,battery-voltage-divider";
+        label = "BATTERY";
+        io-channels = <&adc 3>;
+        output-ohms = <100000>;
+        full-ohms = <(100000 + 100000)>;
+    };
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        label = "KSCAN";
+        diode-direction = "col2row";
+    };
+};
+
+
+&pwm0 {
+    status = "okay";
+    ch0-pin = <25>;
+    /* ch0-inverted; */
+};
