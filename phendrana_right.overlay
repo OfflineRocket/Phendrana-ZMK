@@ -2,6 +2,9 @@
 
 #include "phendrana.dtsi"
 
+&default_transform {
+    col-offset = <7>;
+};
 
 &kscan0 {
     row-gpios
