@@ -10,7 +10,17 @@ endif
 
 if SHIELD_PHENDRANA_LEFT || SHIELD_PHENDRANA_RIGHT
 
-config ZMK_SPLIT_ROLE_CENTRAL
+config ZMK_SPLIT
     default y
+
+if ZMK_BACKLIGHT
+
+config PWM
+    default y
+
+config LED_PWM
+    default y
+
+endif # ZMK_BACKLIGHT
 
 endif

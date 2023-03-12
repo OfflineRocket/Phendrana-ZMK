@@ -2,7 +2,8 @@ file_format: "1"
 id: phendrana
 name: Phendrana
 type: shield
-requires: [makerdiary_nrf52840_m3]
+url: https://github.com/LegoRocket/Phendrana-ZMK
+requires: [makerdiary_nrf52840_m2]
 features:
   - keys
   - backlight
