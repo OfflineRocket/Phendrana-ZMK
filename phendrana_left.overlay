@@ -2,6 +2,7 @@
 
 #include "phendrana.dtsi"
 
+
 &kscan0 {
     col-gpios
         = <&gpio0 28 GPIO_ACTIVE_HIGH>
@@ -21,4 +22,5 @@
         , <&gpio0 23 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
 };
+
 
