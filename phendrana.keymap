@@ -54,7 +54,7 @@
                 &bl BL_DEC     &trans       &trans       &trans       &trans       &trans       &trans          &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans      &trans      &trans
                 &trans         &trans       &trans       &trans       &trans       &trans       &trans          &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans      &trans      &trans
                 &trans         &trans       &trans       &trans       &trans       &trans       &trans          &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans      &trans      &trans
-                &trans         &trans       &trans       &trans       &trans       &trans       &trans          &trans       &trans       &trans       &trans       &trans       &trans       &kp C_PREV   &trans      &trans      &kp C_NEXT
+                &trans         &bt BT_CLR   &trans       &trans       &trans       &trans       &trans          &trans       &trans       &trans       &trans       &trans       &trans       &kp C_PREV   &trans      &trans      &kp C_NEXT
 
             >;
         };
